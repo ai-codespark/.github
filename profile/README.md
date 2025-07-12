@@ -48,3 +48,33 @@ npm install -g @ai-codespark/gemini-cli@latest
 }
 ```
 > cat $HOME/.gemini/settings.json
+
+
+
+## trae-agent
+
+```bash
+uv venv
+uv sync --all-extras
+source .venv/bin/activate
+```
+
+```json
+{
+  "default_provider": "openai",
+  "max_steps": 20,
+  "enable_lakeview": false,
+  "model_providers": {
+    "openai": {
+      "api_key": "sk-1234",
+      "base_url": "http://localhost:4000",
+      "model": "gemini-2.5-pro",
+      "max_tokens": 120000,
+      "temperature": 0.5,
+      "top_p": 1,
+      "max_retries": 10
+    }
+  }
+}
+```
+> cat trae_config.json
