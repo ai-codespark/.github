@@ -1,7 +1,6 @@
 ## claude-code
 
 ```bash
-#export ANTHROPIC_LOG=debug
 export ANTHROPIC_BASE_URL="http://localhost:4000"
 export ANTHROPIC_AUTH_TOKEN=sk-1234
 
