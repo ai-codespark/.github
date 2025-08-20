@@ -60,6 +60,13 @@ export GEMINI_MODEL=gemini-2.5-pro
 npm install -g @gen-cli/gen-cli@latest
 ```
 
+```json
+{
+  "selectedAuthType": "siliconflow-api-key"
+}
+```
+> cat ~/.gen-cli/settings.json
+
 
 
 ## qwen-code
@@ -71,6 +78,13 @@ export OPENAI_MODEL="gemini-2.5-pro"
 
 npm install -g @qwen-code/qwen-code@latest
 ```
+
+```json
+{
+  "selectedAuthType": "openai"
+}
+```
+> cat ~/.qwen/settings.json
 
 
 
