@@ -50,6 +50,28 @@ npm install -g @ai-codespark/gemini-cli@latest
 
 
 
+## gen-cli
+
+```bash
+export SILICONFLOW_API_KEY=sk-1234
+
+npm install -g @gen-cli/gen-cli@latest
+```
+
+
+
+## qwen-code
+
+```bash
+export OPENAI_BASE_URL="http://localhost:4000"
+export OPENAI_API_KEY=sk-1234
+export OPENAI_MODEL="gemini-2.5-pro"
+
+npm install -g @qwen-code/qwen-code@latest
+```
+
+
+
 ## trae-agent
 
 ```bash
