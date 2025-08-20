@@ -53,7 +53,9 @@ npm install -g @ai-codespark/gemini-cli@latest
 ## gen-cli
 
 ```bash
+export SILICONFLOW_BASE_URL="http://localhost:4000"
 export SILICONFLOW_API_KEY="sk-1234"
+export GEMINI_MODEL=gemini-2.5-pro
 
 npm install -g @gen-cli/gen-cli@latest
 ```
