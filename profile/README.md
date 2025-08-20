@@ -2,7 +2,7 @@
 
 ```bash
 export ANTHROPIC_BASE_URL="http://localhost:4000"
-export ANTHROPIC_AUTH_TOKEN=sk-1234
+export ANTHROPIC_AUTH_TOKEN="sk-1234"
 
 npm install -g @anthropic-ai/claude-code@latest
 ```
@@ -35,7 +35,7 @@ wire_api = "chat"
 
 ```bash
 export GOOGLE_GEMINI_BASE_URL="http://localhost:4000"
-export GEMINI_API_KEY=sk-1234
+export GEMINI_API_KEY="sk-1234"
 
 npm install -g @ai-codespark/gemini-cli@latest
 ```
@@ -53,7 +53,7 @@ npm install -g @ai-codespark/gemini-cli@latest
 ## gen-cli
 
 ```bash
-export SILICONFLOW_API_KEY=sk-1234
+export SILICONFLOW_API_KEY="sk-1234"
 
 npm install -g @gen-cli/gen-cli@latest
 ```
@@ -64,7 +64,7 @@ npm install -g @gen-cli/gen-cli@latest
 
 ```bash
 export OPENAI_BASE_URL="http://localhost:4000"
-export OPENAI_API_KEY=sk-1234
+export OPENAI_API_KEY="sk-1234"
 export OPENAI_MODEL="gemini-2.5-pro"
 
 npm install -g @qwen-code/qwen-code@latest
