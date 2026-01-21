@@ -3,6 +3,7 @@
 ```bash
 export ANTHROPIC_BASE_URL="http://localhost:4000"
 export ANTHROPIC_AUTH_TOKEN="sk-1234"
+export ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
 
 npm install -g @anthropic-ai/claude-code@latest
 ```
