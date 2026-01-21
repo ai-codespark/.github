@@ -1,7 +1,7 @@
 ## claude-code
 
 ```bash
-export ANTHROPIC_BASE_URL="http://localhost:4000"
+export ANTHROPIC_BASE_URL="https://litellm.example.com"
 export ANTHROPIC_AUTH_TOKEN="sk-1234"
 export ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
 
@@ -24,7 +24,7 @@ model_provider = "litellm"
 
 [model_providers.litellm]
 name = "LiteLLM"
-base_url = "http://localhost:4000/v1"
+base_url = "https://litellm.example.com"
 env_key = "LITELLM_API_KEY"
 wire_api = "chat"
 ```
@@ -35,7 +35,7 @@ wire_api = "chat"
 ## gemini-cli
 
 ```bash
-export GOOGLE_GEMINI_BASE_URL="http://localhost:4000"
+export GOOGLE_GEMINI_BASE_URL="https://litellm.example.com"
 export GEMINI_API_KEY="sk-1234"
 
 npm install -g @ai-codespark/gemini-cli@latest
@@ -54,7 +54,7 @@ npm install -g @ai-codespark/gemini-cli@latest
 ## gen-cli
 
 ```bash
-export SILICONFLOW_BASE_URL="http://localhost:4000"
+export SILICONFLOW_BASE_URL="https://litellm.example.com"
 export SILICONFLOW_API_KEY="sk-1234"
 export GEMINI_MODEL=gemini-2.5-pro
 
@@ -73,7 +73,7 @@ npm install -g @gen-cli/gen-cli@latest
 ## qwen-code
 
 ```bash
-export OPENAI_BASE_URL="http://localhost:4000"
+export OPENAI_BASE_URL="https://litellm.example.com"
 export OPENAI_API_KEY="sk-1234"
 export OPENAI_MODEL="gemini-2.5-pro"
 
@@ -105,7 +105,7 @@ source .venv/bin/activate
   "model_providers": {
     "openai": {
       "api_key": "sk-1234",
-      "base_url": "http://localhost:4000",
+      "base_url": "https://litellm.example.com",
       "model": "gemini-2.5-pro",
       "max_tokens": 120000,
       "temperature": 0.5,
