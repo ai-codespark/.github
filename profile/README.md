@@ -3,10 +3,24 @@
 ```bash
 export ANTHROPIC_BASE_URL="https://litellm.example.com"
 export ANTHROPIC_AUTH_TOKEN="sk-1234"
-export ANTHROPIC_MODEL="claude-sonnet-4-5-20250929"
 
 npm install -g @anthropic-ai/claude-code@latest
 ```
+
+```json
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://litellm.example.com",
+    "ANTHROPIC_AUTH_TOKEN": "sk-1234",
+    "ANTHROPIC_MODEL": "claude-sonnet-4-5-20250929"
+  },
+  "permissions": {
+    "allow": ["*"],
+    "deny": []
+  }
+}
+```
+> $HOME/.claude/settings.json
 
 
 
@@ -28,7 +42,7 @@ base_url = "https://litellm.example.com"
 env_key = "LITELLM_API_KEY"
 wire_api = "chat"
 ```
-> cat $HOME/.codex/config.toml
+> $HOME/.codex/config.toml
 
 
 
@@ -47,7 +61,7 @@ npm install -g @ai-codespark/gemini-cli@latest
   "theme": "ANSI"
 }
 ```
-> cat $HOME/.gemini/settings.json
+> $HOME/.gemini/settings.json
 
 
 
@@ -66,7 +80,7 @@ npm install -g @gen-cli/gen-cli@latest
   "selectedAuthType": "siliconflow-api-key"
 }
 ```
-> cat ~/.gen-cli/settings.json
+> $HOME/.gen-cli/settings.json
 
 
 
@@ -85,7 +99,7 @@ npm install -g @qwen-code/qwen-code@latest
   "selectedAuthType": "openai"
 }
 ```
-> cat ~/.qwen/settings.json
+> $HOME/.qwen/settings.json
 
 
 
@@ -115,4 +129,4 @@ source .venv/bin/activate
   }
 }
 ```
-> cat trae_config.json
+> trae_config.json
