@@ -40,7 +40,7 @@ model_provider = "litellm"
 name = "LiteLLM"
 base_url = "https://litellm.example.com"
 env_key = "LITELLM_API_KEY"
-wire_api = "chat"
+wire_api = "responses"
 ```
 > $HOME/.codex/config.toml
 
