@@ -1,4 +1,4 @@
-## claude-code
+## claude
 
 ```bash
 export ANTHROPIC_BASE_URL="https://litellm.example.com"
@@ -46,11 +46,12 @@ wire_api = "responses"
 
 
 
-## gemini-cli
+## gemini
 
 ```bash
 export GOOGLE_GEMINI_BASE_URL="https://litellm.example.com"
 export GEMINI_API_KEY="sk-1234"
+export GEMINI_MODEL=gemini-2.5-pro
 
 npm install -g @ai-codespark/gemini-cli@latest
 ```
@@ -65,7 +66,7 @@ npm install -g @ai-codespark/gemini-cli@latest
 
 
 
-## gen-cli
+## gen
 
 ```bash
 export SILICONFLOW_BASE_URL="https://litellm.example.com"
@@ -84,7 +85,7 @@ npm install -g @gen-cli/gen-cli@latest
 
 
 
-## qwen-code
+## qwen
 
 ```bash
 export OPENAI_BASE_URL="https://litellm.example.com"
@@ -103,7 +104,7 @@ npm install -g @qwen-code/qwen-code@latest
 
 
 
-## trae-agent
+## trae
 
 ```bash
 uv venv
