@@ -1,29 +1,3 @@
-## claude
-
-```bash
-export ANTHROPIC_BASE_URL="https://litellm.example.com"
-export ANTHROPIC_AUTH_TOKEN="sk-1234"
-
-npm install -g @anthropic-ai/claude-code@latest
-```
-
-```json
-{
-  "env": {
-    "ANTHROPIC_BASE_URL": "https://litellm.example.com",
-    "ANTHROPIC_AUTH_TOKEN": "sk-1234",
-    "ANTHROPIC_MODEL": "claude-sonnet-4-5-20250929"
-  },
-  "permissions": {
-    "allow": ["*"],
-    "deny": []
-  }
-}
-```
-> $HOME/.claude/settings.json
-
-
-
 ## codex
 
 ```bash
