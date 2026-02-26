@@ -53,6 +53,38 @@ npm install -g @gen-cli/gen-cli@latest
 ```
 > $HOME/.gen-cli/settings.json
 
+## kimi
+
+```bash
+export KIMI_VERSION=1.14.0
+export KIMI_BASE_URL="https://litellm.example.com"
+export KIMI_API_KEY=sk-1234
+export KIMI_MODEL_NAME=gemini-2.5-pro
+curl -L https://github.com/MoonshotAI/kimi-cli/releases/download/${KIMI_VERSION}/kimi-${KIMI_VERSION}-x86_64-unknown-linux-gnu.tar.gz -o /tmp/kimi.tar.gz && \
+    tar -xzf /tmp/kimi.tar.gz -C /tmp && \
+    mv /tmp/kimi /usr/local/bin/kimi && \
+    chown root:root /usr/local/bin/kimi && \
+    chmod +x /usr/local/bin/kimi && \
+    rm -rf /tmp/kimi.tar.gz
+```
+
+```toml
+default_model = "kimi-for-coding"
+default_thinking = false
+default_yolo = false
+
+[providers.kimi-for-coding]
+type = "kimi"
+base_url = "https://api.kimi.com/coding/v1"
+api_key = "sk-xxx"
+
+[models.kimi-for-coding]
+provider = "kimi-for-coding"
+model = "kimi-for-coding"
+max_context_size = 262144
+```
+> $HOME/.kimi/config.toml
+
 ## opencode
 
 ```bash
