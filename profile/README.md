@@ -18,8 +18,6 @@ wire_api = "responses"
 ```
 > $HOME/.codex/config.toml
 
-
-
 ## gemini
 
 ```bash
@@ -38,8 +36,6 @@ npm install -g @ai-codespark/gemini-cli@latest
 ```
 > $HOME/.gemini/settings.json
 
-
-
 ## gen
 
 ```bash
@@ -57,7 +53,60 @@ npm install -g @gen-cli/gen-cli@latest
 ```
 > $HOME/.gen-cli/settings.json
 
+## opencode
 
+```bash
+BUN_INSTALL="$HOME/.bun"
+PATH="$BUN_INSTALL/bin:$PATH"
+XDG_DATA_HOME="$HOME/.local/share"
+XDG_CACHE_HOME="$HOME/.cache"
+XDG_CONFIG_HOME="$HOME/.config"
+XDG_STATE_HOME="$HOME/.local/state"
+
+mkdir -p \
+    $HOME/.local/share/opencode/bin \
+    $HOME/.local/share/opencode/log \
+    $HOME/.cache/opencode \
+    $HOME/.config/opencode \
+    $HOME/.local/state/opencode
+
+bun install -g @ai-sdk/openai-compatible && \
+bun install -g opencode-ai
+
+mkdir -p /tmp/test-opencode && \
+    cd /tmp/test-opencode && \
+    git init && \
+    (echo "hello" | opencode "$PWD" > /tmp/opencode.log 2>&1 &) && \
+    OPENCODE_PID=$! && \
+    sleep 5 && \
+    kill $OPENCODE_PID 2>/dev/null || true && \
+    rm -rf /tmp/test-opencode
+
+echo "export TERM=xterm-256color" >> /home/$NAME/.bashrc
+```
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "litellm/ollama-kimi-k2.5",
+  "provider": {
+    "litellm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LiteLLM",
+      "options": {
+        "baseURL": "https://litellm.example.com",
+        "apiKey": "sk-1234"
+      },
+      "models": {
+        "ollama-kimi-k2.5": {
+          "name": "Ollama Kimi K2.5"
+        }
+      }
+    }
+  }
+}
+```
+> $HOME/.config/opencode/opencode.jsonc
 
 ## qwen
 
@@ -75,8 +124,6 @@ npm install -g @qwen-code/qwen-code@latest
 }
 ```
 > $HOME/.qwen/settings.json
-
-
 
 ## trae
 
